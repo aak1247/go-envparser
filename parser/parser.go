@@ -36,6 +36,10 @@ func IgnorePrefix() {
 	env.ignorePrefix = true
 }
 
+func GetEnv() *Env {
+	return env
+}
+
 func Fill(v interface{}) error {
 	return env.Fill(v)
 }
